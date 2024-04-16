@@ -17,9 +17,3 @@ spec:
         name: helloworld
         ports:
         - containerPort: 8081
-        resources:
-          limits:
-            memory: "500Mi"
-            cpu: "100m"
-
-
