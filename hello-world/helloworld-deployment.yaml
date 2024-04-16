@@ -1,21 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld
+  name: moon-ladder-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: helloworld
+      app: moon-ladder
   template:
     metadata:
       labels:
-        app: helloworld
+        app: moon-ladder
     spec:
       containers:
       - image: yinan9751/moon-ladder:572ab2557eeeacc3f88258db84d97c613ff3e608
         name: helloworld
         ports:
         - containerPort: 8081
+        resources:
+          limits:
+            memory: "500Mi"
+            cpu: "100m"
 
 
