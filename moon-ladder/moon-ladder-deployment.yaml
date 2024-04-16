@@ -13,7 +13,7 @@ spec:
         app: moon-ladder
     spec:
       containers:
-      - image: yinan9751/moon-ladder:572ab2557eeeacc3f88258db84d97c613ff3e608
+      - image: yinan9751/moon-ladder:814e4a7d666363d9c9b69ee9d8d72739316c9713
         name: helloworld
         ports:
         - containerPort: 8081
